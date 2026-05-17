@@ -16,11 +16,16 @@ jobs:
             # - name: read file
             #   run: cat README.md
 
-            - name: run commands
+            # - name: run commands
+            #   run: |
+            #    echo "Try multiple commands in one step config"
+            #    ls -latr
+            #    cat README.md
+
+            - name: execute shall script
               run: |
-               echo "Try multiple commands in one step config"
-               ls -latr
-               cat README.md
-               
+                ls -latr
+                chmod +x run-commands.sh
+
 
 
